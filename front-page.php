@@ -12,10 +12,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-            <p>This is a static front page.</p>
-
 		<?php if ( have_posts() ) : ?>
 
+            <?php the_title( '<h1 class="entry-title lead">', '</h1>' ); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 

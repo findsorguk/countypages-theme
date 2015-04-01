@@ -280,6 +280,21 @@ h6 {
 	clear: both;
 }
 
+h1.site-title {
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.type-page h1.lead a {
+    color: #333333;
+}
+
+h2.site-description {
+    font-size: 13px;
+    line-height: 13px;
+}
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -409,6 +424,10 @@ table {
 	width: 100%;
 }
 
+div.site-branding {
+    margin-bottom: 20px;
+}
+
 /*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
@@ -492,10 +511,6 @@ a {
 	color: royalblue;
 }
 
-a:visited {
-	color: purple;
-}
-
 a:hover,
 a:focus,
 a:active {
@@ -523,7 +538,6 @@ a:active {
 
 .main-navigation ul {
 	list-style: none;
-	margin: 0;
 	padding-left: 0;
 }
 
@@ -745,7 +759,7 @@ a:active {
 }
 
 .page-content,
-.entry-content,
+.type-post .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
 }
@@ -753,6 +767,10 @@ a:active {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+span.cat-links {
+    margin-right: 1em;
 }
 
 /*--------------------------------------------------------------
