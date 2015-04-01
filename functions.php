@@ -159,10 +159,63 @@ require get_template_directory() . '/inc/jetpack.php';
 /**
  * Remove annoying ?ver= from enqueued CSS styles and JS that come from finds.org.uk
  */
-function remove_cssjs_ver( $src ) {
+function countypages_remove_cssjs_ver( $src ) {
     if( strpos( $src, '?ver=' ) )
         $src = remove_query_arg( 'ver', $src );
     return $src;
 }
-add_filter( 'style_loader_src', 'remove_cssjs_ver', 10, 2 );
-add_filter( 'script_loader_src', 'remove_cssjs_ver', 10, 2 );
+add_filter( 'style_loader_src', 'countypages_remove_cssjs_ver', 10, 2 );
+add_filter( 'script_loader_src', 'countypages_remove_cssjs_ver', 10, 2 );
+
+/**
+ * Add Font Awesome icons to the primary menu in the style of finds.org.uk
+ *
+ * Modifies $args->link_before to inject into start_el method of parent
+ *
+ */
+
+class CountyPages_Icons_Menu_Walker extends Walker_Nav_Menu {
+
+    function generate_icon_tag ( $iconName ) {
+        $iconWrap = '<i class="icon-%s"></i>';
+        return sprintf( $iconWrap, $iconName );
+    }
+
+    function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+
+        if ( $args->theme_location == 'primary' ) {
+
+            if ( $depth == 0 ) { // only add icons to top-level menu items
+
+                switch ($item->title) {
+                    case 'Home':
+                        $args->link_before = $this->generate_icon_tag( 'home' );
+                        break;
+                    case 'Counties':
+                        $args->link_before = $this->generate_icon_tag( 'map-marker' );
+                        break;
+                    case 'News':
+                        $args->link_before = $this->generate_icon_tag( 'calendar' );
+                        break;
+                    case 'Guides':
+                        $args->link_before = $this->generate_icon_tag( 'eye-open' );
+                        break;
+                    case 'About':
+                        $args->link_before = $this->generate_icon_tag( 'info-sign' );
+                        break;
+                    case 'Contact':
+                        $args->link_before = $this->generate_icon_tag( 'user' );
+                        break;
+
+                    default:
+                        $args->link_before = $this->generate_icon_tag( 'file' );
+                }
+            }
+
+            parent::start_el($output, $item, $depth, $args);
+
+        }
+    }
+}
+
+

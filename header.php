@@ -41,10 +41,21 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'countypages' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+
+
+            <!-- WordPress HTML -->
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'countypages' ); ?></button>
+                <?php wp_nav_menu( array( 'theme_location' => 'primary',
+                                            'menu_id' => 'primary-menu',
+                                            'container_class' => 'sidebar-nav col-md-3', // finds.org.uk CSS
+                                            'menu_class' => 'menu nav nav-stacked nav-pills collapsible',  // finds.org.uk CSS
+                                            'walker' => new CountyPages_Icons_Menu_Walker() // adds icons to menu items
+                                        ) ); ?>
+            </nav><!-- #site-navigation -->
+
+
+
 	</header><!-- #masthead -->
 
             <!-- finds.org.uk HTML -->
