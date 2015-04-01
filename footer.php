@@ -7,16 +7,23 @@
  * @package countypages
  */
 ?>
+            <!-- WordPress HTML -->
+	        </div><!-- #content -->
 
-	</div><!-- #content -->
+        <!-- finds.org.uk HTML -->
+        </div><!--/.row-fluid-->
+</div><!--/.span9-->
+
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'countypages' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'countypages' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'countypages' ), 'countypages', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
+
+        <?php
+        // Loads a clone of the finds.org.uk footer
+        get_template_part('findsorguk', 'footer');
+        ?>
+
 	</footer><!-- #colophon -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
