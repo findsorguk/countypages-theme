@@ -168,6 +168,17 @@ add_filter( 'style_loader_src', 'countypages_remove_cssjs_ver', 10, 2 );
 add_filter( 'script_loader_src', 'countypages_remove_cssjs_ver', 10, 2 );
 
 /**
+ * Add .active class to active primary menu item in the style of finds.org.uk
+ */
+function countypages_active_nav_class ( $classes ) {
+    if( in_array( 'current-menu-item', $classes ) ){
+        $classes[] = 'active ';
+    }
+    return $classes;
+}
+add_filter( 'nav_menu_css_class' , 'countypages_active_nav_class' );
+
+/**
  * Add Font Awesome icons to the primary menu in the style of finds.org.uk
  *
  * Modifies $args->link_before to inject into start_el method of parent
