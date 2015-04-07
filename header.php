@@ -45,7 +45,6 @@
 
             <!-- WordPress HTML -->
             <nav id="site-navigation" class="main-navigation" role="navigation">
-                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'countypages' ); ?></button>
                 <?php wp_nav_menu( array( 'theme_location' => 'primary',
                                             'menu_id' => 'primary-menu',
                                             'container_class' => 'sidebar-nav col-md-3', // finds.org.uk CSS
@@ -64,4 +63,4 @@
                 <div class="row-fluid"><!-- tag closed in footer -->
 
                     <!-- WordPress HTML -->
-                    <div id="content" class="site-content">
+                    <div id="content" class="site-content row-fluid">

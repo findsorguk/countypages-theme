@@ -292,7 +292,8 @@ h1.site-title {
 
 h2.site-description {
     font-size: 13px;
-    line-height: 13px;
+    line-height: 15px;
+    font-weight: normal;
 }
 
 p {
@@ -595,7 +596,7 @@ a:active {
 .main-navigation .current_page_ancestor > a {
 }
 
-/* Small menu. */
+/* Small menu.
 .menu-toggle {
 	display: none;
 }
@@ -610,6 +611,8 @@ a:active {
 		display: none;
 	}
 }
+
+*/
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
@@ -769,7 +772,7 @@ a:active {
 	margin: 0 0 1.5em;
 }
 
-span.cat-links {
+span.cat-links, span.comments-link, span.edit-link {
     margin-right: 1em;
 }
 
