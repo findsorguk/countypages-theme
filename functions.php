@@ -202,17 +202,29 @@ class CountyPages_Icons_Menu_Walker extends Walker_Nav_Menu {
                     case 'Home':
                         $args->link_before = $this->generate_icon_tag( 'home' );
                         break;
-                    case 'Counties':
+                    case 'Counties': //Primary site only
                         $args->link_before = $this->generate_icon_tag( 'map-marker' );
                         break;
-                    case 'News':
+                    case 'News': //Primary site only
                         $args->link_before = $this->generate_icon_tag( 'calendar' );
                         break;
-                    case 'Guides':
+                    case 'Guides': //Primary site only
                         $args->link_before = $this->generate_icon_tag( 'eye-open' );
                         break;
-                    case 'About':
+                    case 'About': //Primary site only
                         $args->link_before = $this->generate_icon_tag( 'info-sign' );
+                        break;
+                    case strpos($item->title, 'Historic'): //Network sites only
+                    $args->link_before = $this->generate_icon_tag( 'picture' );
+                    break;
+                    case 'Finds': //Network sites only
+                        $args->link_before = $this->generate_icon_tag( 'map-marker' );
+                        break;
+                    case 'Get Involved': //Network sites only
+                        $args->link_before = $this->generate_icon_tag( 'thumbs-up' );
+                        break;
+                    case 'Team': //Network sites only
+                        $args->link_before = $this->generate_icon_tag( 'star' );
                         break;
                     case 'Contact':
                         $args->link_before = $this->generate_icon_tag( 'user' );
