@@ -36,4 +36,5 @@
 	<footer class="entry-footer">
 		<?php countypages_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+    <hr />
 </article><!-- #post-## -->
