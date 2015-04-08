@@ -14,7 +14,12 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
 
-			<?php the_post_navigation(); ?>
+			<?php the_post_navigation(array(
+                'prev_text'          => 'Previous post: %title',
+                'next_text'          => 'Next post: %title',
+                'screen_reader_text' => __( 'Post navigation' ),
+                                      ));
+            ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template
