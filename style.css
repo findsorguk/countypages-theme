@@ -637,6 +637,19 @@ a:active {
 }
 
 /*--------------------------------------------------------------
+5.3 Breadcrumbs (plugin: Breadcrumb NavXT)
+--------------------------------------------------------------*/
+.breadcrumbs {
+    margin-bottom: 20px;
+}
+
+.breadcrumbs > span + span:before {
+    color: #000000;
+    content: '/ ';
+    padding-left: 4px;
+}
+
+/*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
