@@ -179,6 +179,39 @@ function countypages_active_nav_class ( $classes ) {
 add_filter( 'nav_menu_css_class' , 'countypages_active_nav_class' );
 
 /**
+ * Take control of CSS classes output in Network Latest Posts
+ */
+function countypages_nlposts_block_css( $html_tags ) {
+    $html_tags = array(
+        'wrapper_o' => "<ul class='nlposts-wrapper nlposts-block'>",
+        'wrapper_c' => "</ul>",
+        'wtitle_o' => "<h2 class='lead'>",
+        'wtitle_c' => "</h2>",
+        'item_o' => "",
+        'item_c' => "",
+        'content_o' => "<div class='nlposts-container nlposts-block-container'>",
+        'content_c' => "</div>",
+        'meta_o' => "<i class='icon-map-marker'></i><span class='nlposts-block-meta-override'>",
+        'meta_c' => "</span>",
+        'thumbnail_o' => "",
+        'thumbnail_c' => "",
+        'thumbnail_io' => "<li class='nlposts-block-thumbnail-litem-override span6'>",
+        'thumbnail_ic' => "</li>",
+        'pagination_o' => "<div class='nlposts-block-pagination pagination'>",
+        'pagination_c' => "</div>",
+        'title_o' => "<h3 class='nlposts-block-title'>",
+        'title_c' => "</h3>",
+        'excerpt_o' => "<div class='nlposts-block-excerpt'><p>",
+        'excerpt_c' => "</p></div>",
+        'caption_o' => "<div class='nlposts-caption'>",
+        'caption_c' => "</div>"
+    );
+    return $html_tags;
+}
+add_filter( 'nlposts_block_output', 'countypages_nlposts_block_css' );
+
+
+/**
  * Add Font Awesome icons to the primary menu in the style of finds.org.uk
  *
  * Modifies $args->link_before to inject into start_el method of parent
