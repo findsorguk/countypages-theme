@@ -36,5 +36,9 @@
 	<footer class="entry-footer">
 		<?php countypages_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
-    <hr />
+
+    <?php if ( is_home() ){ ?>
+        <hr />
+    <?php } ?>
+
 </article><!-- #post-## -->
