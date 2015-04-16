@@ -37,8 +37,4 @@
 		<?php countypages_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 
-    <?php if ( is_home() ){ ?>
-        <hr />
-    <?php } ?>
-
 </article><!-- #post-## -->

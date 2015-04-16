@@ -763,6 +763,13 @@ a:active {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
+/* Create a horizontal rule above titles in bottom sidebar widgets */
+#widget-area-bottom h2.lead, #widget-area-bottom h3.widget-title {
+    border-top: solid #e5e5e5 2px;
+    padding-top: 18px;
+    margin-top: 18px;
+}
+
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
@@ -799,6 +806,18 @@ a:active {
 
 span.cat-links, span.comments-link, span.edit-link {
     margin-right: 1em;
+}
+
+/* Add horizontal rule after each blog article and front page content */
+body.blog article, body.home article {
+    border-bottom: solid #e5e5e5 2px;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+}
+
+/* No horizontal rule after the last blog article */
+body.blog article:last-child {
+    border-bottom: none;
 }
 
 /*--------------------------------------------------------------
@@ -930,12 +949,6 @@ object {
 /*--------------------------------------------------------------
 13.1 Network Latest Posts
 --------------------------------------------------------------*/
-
-/* Create a horizontal rule above the title */
-.nlposts-container {
-    border-top: solid #e5e5e5 2px;
-    margin-top: 20px;
-}
 
 /* Thumbnail picture styling */
 .nlposts-block-thumbnail-litem-override a > img {
