@@ -85,14 +85,23 @@ add_action( 'after_setup_theme', 'countypages_setup' );
  */
 function countypages_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'countypages' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
+		'name'          => __( 'Right Sidebar', 'countypages' ),
+		'id'            => 'sidebar-right',
+		'description'   => 'Right-hand widget area',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
+    register_sidebar( array(
+        'name'          => __( 'Bottom Sidebar', 'countypages' ),
+        'id'            => 'sidebar-bottom',
+        'description'   => 'Bottom widget area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
 }
 add_action( 'widgets_init', 'countypages_widgets_init' );
 
@@ -177,6 +186,15 @@ function countypages_active_nav_class ( $classes ) {
     return $classes;
 }
 add_filter( 'nav_menu_css_class' , 'countypages_active_nav_class' );
+
+/**
+ * Replace the excerpt "more" text with a link
+ */
+function new_excerpt_more($more) {
+    global $post;
+    return '<a class="moretag" href="'. get_permalink($post->ID) . '"> ...more</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
 /**
  * Take control of CSS classes output in Network Latest Posts
