@@ -32,6 +32,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	10.1 Posts and pages
 	10.2 Asides
 	10.3 Comments
+	10.4 Latest Posts area
 11.0 Infinite scroll
 12.0 Media
 	12.1 Captions
@@ -832,11 +833,62 @@ body.blog article:last-child {
 10.3 Comments
 --------------------------------------------------------------*/
 .comment-content a {
-	word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .bypostauthor {
-	display: block;
+    display: block;
+}
+
+/*--------------------------------------------------------------
+10.4 Latest Posts area
+--------------------------------------------------------------*/
+.latest-container {
+    clear:both;
+}
+
+.latest-container > h2 {
+    margin-bottom: 0;
+}
+
+
+.latest-wrapper {
+    clear:both;
+    padding-bottom: 5px;
+    margin-left: 0;
+}
+
+.latest-container ul + ul.latest-wrapper {
+    border-top: solid #e5e5e5 1px;
+}
+
+.latest-container ul + ul.latest-wrapper {
+    border-top: solid #e5e5e5 1px;
+}
+
+div.latest-title {
+    margin-bottom: 7px;
+}
+
+h3.latest-title {
+    display: inline;
+}
+
+.latest-excerpt > div:first-child {
+    margin-top: 14px;
+}
+
+.latest-excerpt p {
+    margin-top: 7px;
+    padding-right: 15px;
+}
+
+ul.latest-thumbnails {
+    list-style: none;
+}
+
+div.latest-more {
+    clear: both;
 }
 
 /*--------------------------------------------------------------
@@ -976,11 +1028,11 @@ object {
 
 /* These styles override margins set elsewhere */
 .nlposts-wrapper {
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 .nlposts-block li.span6 {
-    margin: 0px;
+    margin: 0;
 }
 
 /* Give post title some space */
@@ -992,6 +1044,7 @@ object {
 /* Give post first paragraph some space */
 .nlposts-block-excerpt > p {
     margin-top: 7px;
+    padding-right: 15px;
 }
 
 /* Ensure list style is none in all size viewports */

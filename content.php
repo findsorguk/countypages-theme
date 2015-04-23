@@ -1,5 +1,8 @@
 <?php
 /**
+ * The default content template for displaying posts and pages etc. if not overriden by a content-___.php template
+ * (Used for displaying blog home page posts as rendered by index.php)
+ *
  * @package countypages
  */
 ?>
