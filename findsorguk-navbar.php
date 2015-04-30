@@ -22,22 +22,22 @@
                     <ul class="nav">
                         <li><a href="/"
                                title="The Scheme's homepage" accesskey="1">Home <i class="icon-home icon-white"></i></a></li>
-                        <li><a href="http://finds.dev/contacts"
+                        <li><a href="https://finds.org.uk/contacts"
                                title="Who to contact at the Scheme">Contacts</a></li>
-                        <li><a href="http://finds.dev/getinvolved"
+                        <li><a href="https://finds.org.uk/getinvolved"
                                title="How to get involved with the largest public archaeology project">Get Involved</a></li>
-                        <li><a href="http://finds.dev/database"
+                        <li><a href="https://finds.org.uk/database"
                                title="Search our database for artefacts and coins">Database</a></li>
-                        <li><a href="http://finds.dev/treasure"
+                        <li><a href="https://finds.org.uk/treasure"
                                title="Learn about the Treasure Act">Treasure</a></li>
 
-                        <li><a href="http://finds.dev/guides"
+                        <li><a href="https://finds.org.uk/guides"
                                title="View guides to artefacts, coins and periods">Guides</a></li>
-                        <li><a href="http://finds.dev/news"
+                        <li><a href="https://finds.org.uk/news"
                                title="Keep up to date with the latest news and events">News &amp; Events</a></li>
-                        <li><a href="http://finds.dev/publications"
+                        <li><a href="https://finds.org.uk/publications"
                                title="Publications and reports">Publications</a></li>
-                        <li><a href="http://finds.dev/research"
+                        <li><a href="https://finds.org.uk/research"
                                title="Academic research using our data">Research</a></li>
                         <li><a class="active" href="/counties"
                                title="Finds in your local community">Counties</a></li>

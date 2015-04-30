@@ -26,16 +26,16 @@
                     <h4 class="lead">About Us</h4>
                     <ul>
                         <li>
-                            <a href="http://finds.dev/about"
+                            <a href="https://finds.org.uk/about"
                                title="More information about the Portable Antiquities Scheme">About the Scheme</a></li>
                         <li>
-                            <a href="http://finds.dev/about/vacancies"
+                            <a href="https://finds.org.uk/about/vacancies"
                                title="See all current job vacancies">Vacancies</a></li>
                         <li>
-                            <a href="http://finds.dev/about/logoandbranding"
+                            <a href="https://finds.org.uk/about/logoandbranding"
                                title="Scheme logo and branding guidelines">Logo and branding</a></li>
                         <li>
-                            <a href="http://finds.dev/about/contactus"
+                            <a href="https://finds.org.uk/about/contactus"
                                title="Contact the Scheme regarding our work" accesskey="9">Contact Us</a></li>
 
                     </ul>
@@ -44,22 +44,22 @@
                     <h4 class="lead">About our Site</h4>
                     <ul>
                         <li>
-                            <a href="http://finds.dev/info"
+                            <a href="https://finds.org.uk/info"
                                title="Information about this website">About our site</a></li>
                         <li>
-                            <a href="http://finds.dev/info/accessibility"
+                            <a href="https://finds.org.uk/info/accessibility"
                                title="Information about our site's accessibility" accesskey="0">Accessibility</a></li>
                         <li>
-                            <a href="http://finds.dev/info/termsandconditions"
+                            <a href="https://finds.org.uk/info/termsandconditions"
                                title="Read about our terms and conditions - nothing onerous" accesskey="8">Terms of Use</a></li>
                         <li>
-                            <a href="http://finds.dev/info/privacy"
+                            <a href="https://finds.org.uk/info/privacy"
                                title="Read about our privacy policy">Privacy &amp; Cookies</a></li>
                         <li>
-                            <a href="http://finds.dev/info/foi"
+                            <a href="https://finds.org.uk/info/foi"
                                title="Freedom of information requests and how to submit one">Freedom of Information</a></li>
                         <li>
-                            <a href="http://finds.dev/help/database"
+                            <a href="https://finds.org.uk/help/database"
                                title="Find helpful information about using our site" accesskey="6">Help</a></li>
                     </ul>
                 </div>
@@ -93,16 +93,16 @@
                     <h4 class="lead">Data Labs</h4>
                     <ul>
                         <li>
-                            <a href="http://finds.dev/datalabs">Linked
+                            <a href="https://finds.org.uk/datalabs">Linked
                                 open data policy</a></li>
                         <li>
-                            <a href="http://finds.dev/datalabs/terminology/objects"
+                            <a href="https://finds.org.uk/datalabs/terminology/objects"
                                title="Learn about object terms in use">Controlled vocabulary</a></li>
                         <li>
-                            <a href="http://finds.dev/datalabs/oai">OAI
+                            <a href="https://finds.org.uk/datalabs/oai">OAI
                                 interface</a></li>
                         <li>
-                            <a href="http://finds.dev/datalabs/rss">RSS
+                            <a href="https://finds.org.uk/datalabs/rss">RSS
                                 feeds</a></li>
                     </ul>
                 </div>

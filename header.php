@@ -34,11 +34,12 @@
     <!-- WordPress HTML -->
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-            <a href="http://finds.dev" title="Go to the homepage"><img src="http://finds.dev/assets/logos/pas.jpg"
+            <a href="https://finds.org.uk" title="Go to the homepage"><img src="https://finds.org.uk/assets/logos/pas.jpg"
                                                                        alt="The Scheme's logo"
                                                                        width="213" height="104"/></a>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+            <?php echo esc_url( home_url( '/' ) ); ?>
 		</div><!-- .site-branding -->
 
         <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
