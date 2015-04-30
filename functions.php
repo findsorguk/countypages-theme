@@ -125,7 +125,7 @@ function countypages_scripts() {
     wp_enqueue_style( 'countypages-jquery.reject', 'https://finds.org.uk/css/jquery.reject.css', false, '',  'screen' );
     wp_enqueue_style( 'countypages-bootstrap-responsive.min', 'https://finds.org.uk/css/bootstrap-responsive.min.css', false, '',  'screen' );
     wp_enqueue_style( 'countypages-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css', false, '', 'screen');
-    wp_enqueue_style( 'countypages-open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans', false, '', 'screen');
+    wp_enqueue_style( 'countypages-open-sans', '//fonts.googleapis.com/css?family=Open+Sans', false, '', 'screen');
     wp_enqueue_style( 'countypages-print', 'https://finds.org.uk/css/print.css', false, '',  'print' );
 
 	wp_enqueue_script( 'countypages-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
@@ -133,8 +133,8 @@ function countypages_scripts() {
 	wp_enqueue_script( 'countypages-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
     // Include JS files from finds.org.uk
-    wp_enqueue_script( 'countypages-jquery.min', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', array(), '', true );
-    wp_enqueue_script( 'countypages-jquery-ui.min', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js', array(), '', true );
+    wp_enqueue_script( 'countypages-jquery.min', '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', array(), '', true );
+    wp_enqueue_script( 'countypages-jquery-ui.min', '//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js', array(), '', true );
     wp_enqueue_script( 'countypages-global-functions', 'https://finds.org.uk/js/globalFunctions.js', array(), '', true );
     wp_enqueue_script( 'countypages-jquery-lightbox', 'https://finds.org.uk/js/JQuery/jquery.lightbox.js', array(), '', true );
     wp_enqueue_script( 'countypages-bootstrap.min', 'https://finds.org.uk/js/bootstrap.min.js', array(), '', true );
