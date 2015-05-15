@@ -432,6 +432,13 @@ div.site-branding {
     margin-bottom: 20px;
 }
 
+.sponsors.sponsors-hlf { /* HLF logo has exclusion zone of half the height of crossed fingers motif */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+
 /*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/

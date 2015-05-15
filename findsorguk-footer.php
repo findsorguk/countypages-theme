@@ -21,6 +21,9 @@
                     <a href="http://www.britishmuseum.org" title="The British Museum website">
                         <img class="sponsors" src="https://finds.org.uk/assets/logos/bm_logo.png" width="150" height="60"
                              alt="The British Museum logo"/></a>
+                    <a href="http://www.hlf.org.uk" title="The Heritage Lottery Fund website">
+                        <img class="sponsors sponsors-hlf" src="https://finds.org.uk/assets/logos/HLF_english_compact_pantone_150px.jpg"
+                             alt="The Heritage Lottery Fund logo"/></a>
                 </div>
                 <div class="span3">
                     <h4 class="lead">About Us</h4>

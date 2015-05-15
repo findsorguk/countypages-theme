@@ -59,6 +59,17 @@
                                         ) ); ?>
             </nav><!-- #site-navigation -->
 
+<?php
+        if( is_main_site() && is_front_page() ) { // Only display sponsor HLF logo on front page of main site
+            echo
+
+            '<div class="site-sponsorship">
+                <a href="http://www.hlf.org.uk" title="The Heritage Lottery Fund website"><img class="sponsors-hlf"
+                                       src="https://finds.org.uk/assets/logos/HLF_english_compact_pantone_150px.jpg"
+                                                                           alt="The Heritage Lottery Fund logo"/></a>
+            </div><!-- .site-sponsorship -->';
+        }
+?>
 
 
 	</header><!-- #masthead -->
