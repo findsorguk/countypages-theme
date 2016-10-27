@@ -8,9 +8,9 @@
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-			<?php countypages_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		<?php
+		get_template_part('content', 'meta');
+		?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
