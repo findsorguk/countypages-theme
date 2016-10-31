@@ -97,6 +97,38 @@ function countypages_posted_on() {
 }
 endif;
 
+if ( ! function_exists( 'countypages_latest_subtitle' ) ) :
+	/**
+	 * Returns the subtitle to be used for the list of latest blog posts on the front page.
+     * See content-latest.php
+	 */
+	function countypages_latest_subtitle() {
+        if( is_main_site() ){
+            $subtitle = 'News from PASt Explorers';
+        } else {
+            $subtitle = 'Latest Posts from ' . esc_html( get_bloginfo('name') );
+        }
+        echo $subtitle;
+
+	}
+endif;
+
+if ( ! function_exists( 'countypages_latest_more_posts' ) ) :
+	/**
+	 * Returns the 'more' wording to be used for the link after the list of latest blog posts on the front page.
+     * See content-latest.php
+	 */
+	function countypages_latest_more_posts() {
+        if( is_main_site() ){
+            $more_posts = 'More News';
+        } else {
+            $more_posts = 'More Posts';
+        }
+        echo $more_posts;
+
+	}
+endif;
+
 if ( ! function_exists( 'countypages_entry_footer' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.

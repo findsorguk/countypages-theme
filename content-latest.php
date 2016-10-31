@@ -10,22 +10,16 @@
 /*
  * Settings for main site vs network sites:
  * -----------------------------------------
- * Number of posts to display: main site - 1 post; network sites - 3 posts
- * Subtitle for main site and network sites
- * More link for main site and network sites
+ * Number of posts to display: main site - 1 post; network sites - 2 posts
  */
 if( is_main_site() ){
     $args =  array(
         'posts_per_page' => '1',
     );
-    $subtitle = 'News from PASt Explorers';
-    $more_posts = 'More News';
 } else {
     $args =  array(
         'posts_per_page' => '2',
     );
-    $subtitle = 'Latest Posts from ' . get_bloginfo('name');
-    $more_posts = 'More Posts';
 }
 
 // Query to retrieve latest blog post(s)
@@ -38,7 +32,7 @@ $latest_posts = new WP_Query( $args );
             <div class='latest-container'>
 
             <h2 class='lead'>
-                <?php echo $subtitle ?>
+                <?php countypages_latest_subtitle(); ?>
             </h2>
 
 <?php while ( $latest_posts->have_posts() ) : $latest_posts->the_post(); ?>
@@ -79,7 +73,9 @@ $latest_posts = new WP_Query( $args );
             </div>
 
             <div class='latest-more'>
-                <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>"<?php echo '<p>' . $more_posts . '</p>' ?></a>
+                <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>"
+                    <p><?php countypages_latest_more_posts(); ?></p>
+                </a>
             </div>
 
 
