@@ -936,7 +936,7 @@ object {
 --------------------------------------------------------------*/
 .wp-caption {
 	margin-bottom: 1.5em;
-	max-width: 100%;
+	max-width: 80%;
 }
 
 .wp-caption img[class*="wp-image-"] {
