@@ -104,7 +104,7 @@ if ( ! function_exists( 'countypages_latest_subtitle' ) ) :
 	 */
 	function countypages_latest_subtitle() {
         if( is_main_site() ){
-            $subtitle = 'News from PASt Explorers';
+            $subtitle = 'PASt Explorers Blog';
         } else {
             $subtitle = 'Latest Posts from ' . esc_html( get_bloginfo('name') );
         }
