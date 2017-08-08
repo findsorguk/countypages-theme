@@ -263,13 +263,13 @@ class CountyPages_Icons_Menu_Walker extends Walker_Nav_Menu {
                     case 'Counties': //Primary site only
                         $args->link_before = $this->generate_icon_tag( 'map-marker' );
                         break;
-                    case 'News': //Primary site only
+                    case 'PASt Explorers Blog': //Primary site only
                         $args->link_before = $this->generate_icon_tag( 'calendar' );
                         break;
                     case 'Guides': //Primary site only
                         $args->link_before = $this->generate_icon_tag( 'eye-open' );
                         break;
-                    case 'About': //Primary site only
+                    case 'About Us': //Primary site only
                         $args->link_before = $this->generate_icon_tag( 'info-sign' );
                         break;
                     case 'County Blog': //Network sites only
