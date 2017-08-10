@@ -120,7 +120,7 @@ if ( ! function_exists( 'countypages_latest_more_posts' ) ) :
 	 */
 	function countypages_latest_more_posts() {
         if( is_main_site() ){
-            $more_posts = 'More News';
+            $more_posts = 'More from PASt Explorers Blog';
         } else {
             $more_posts = 'More Posts';
         }
