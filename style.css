@@ -646,6 +646,19 @@ a:active {
 	width: 50%;
 }
 
+/* Font Awesome icons 4.7.0 */
+
+.sidebar-nav .nav-pills [class^="fa fa-"] {
+	margin-right: 5px;
+}
+
+li [class^="fa fa-"], .nav li [class^="fa fa-"], li [class*=" fa-"], .nav li [class*=" fa-"] {
+	display: inline-block;
+	width: 1.25em;
+	text-align: center;
+}
+
+
 /*--------------------------------------------------------------
 5.3 Breadcrumbs (plugin: Breadcrumb NavXT)
 --------------------------------------------------------------*/

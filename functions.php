@@ -124,7 +124,6 @@ function countypages_scripts() {
     wp_enqueue_style( 'countypages-lightbox', 'https://finds.org.uk/css/lightbox.css', 'screen', false, '', 'screen' );
     wp_enqueue_style( 'countypages-jquery.reject', 'https://finds.org.uk/css/jquery.reject.css', false, '',  'screen' );
     wp_enqueue_style( 'countypages-bootstrap-responsive.min', 'https://finds.org.uk/css/bootstrap-responsive.min.css', false, '',  'screen' );
-    wp_enqueue_style( 'countypages-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css', false, '', 'screen');
     wp_enqueue_style( 'countypages-open-sans', '//fonts.googleapis.com/css?family=Open+Sans', false, '', 'screen');
     wp_enqueue_style( 'countypages-print', 'https://finds.org.uk/css/print.css', false, '',  'print' );
 
@@ -140,6 +139,7 @@ function countypages_scripts() {
     wp_enqueue_script( 'countypages-bootstrap.min', 'https://finds.org.uk/js/bootstrap.min.js', array(), '', true );
     wp_enqueue_script( 'countypages-cookiesdirective', 'https://finds.org.uk/js/JQuery/jquery.cookiesdirective.js', array(), '', true );
     wp_enqueue_script( 'countypages-jquery-reject', 'https://finds.org.uk/js/jquery.reject.js', array(), '', true );
+    wp_enqueue_script( 'countypages-font-awesome', 'https://use.fontawesome.com/0932d3bb80.js', array(), '', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -246,7 +246,7 @@ add_filter( 'nlposts_block_output', 'countypages_nlposts_block_css' );
 class CountyPages_Icons_Menu_Walker extends Walker_Nav_Menu {
 
     function generate_icon_tag ( $iconName ) {
-        $iconWrap = '<i class="icon-%s"></i>';
+        $iconWrap = '<i class="fa fa-%s"></i>';
         return sprintf( $iconWrap, $iconName );
     }
 
@@ -264,16 +264,16 @@ class CountyPages_Icons_Menu_Walker extends Walker_Nav_Menu {
                         $args->link_before = $this->generate_icon_tag( 'map-marker' );
                         break;
                     case 'PASt Explorers Blog': //Primary site only
-                        $args->link_before = $this->generate_icon_tag( 'calendar' );
+                        $args->link_before = $this->generate_icon_tag( 'image' );
                         break;
                     case 'Guides': //Primary site only
-                        $args->link_before = $this->generate_icon_tag( 'eye-open' );
+                        $args->link_before = $this->generate_icon_tag( 'eye' );
                         break;
                     case 'About Us': //Primary site only
-                        $args->link_before = $this->generate_icon_tag( 'info-sign' );
+                        $args->link_before = $this->generate_icon_tag( 'info-circle' );
                         break;
                     case 'County Blog': //Network sites only
-                        $args->link_before = $this->generate_icon_tag( 'picture' );
+                        $args->link_before = $this->generate_icon_tag( 'image' );
                         break;
                     case 'Events': //Network site only
                         $args->link_before = $this->generate_icon_tag( 'calendar' );
@@ -288,7 +288,7 @@ class CountyPages_Icons_Menu_Walker extends Walker_Nav_Menu {
                         $args->link_before = $this->generate_icon_tag( 'thumbs-up' );
                         break;
                     case 'Museums & Groups': //Network sites only
-                        $args->link_before = $this->generate_icon_tag( 'building' );
+                        $args->link_before = $this->generate_icon_tag( 'institution' );
                         break;
                     case 'Team': //Network sites only
                         $args->link_before = $this->generate_icon_tag( 'group' );
