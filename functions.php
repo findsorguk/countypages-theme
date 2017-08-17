@@ -281,11 +281,17 @@ class CountyPages_Icons_Menu_Walker extends Walker_Nav_Menu {
                     case 'Finds': //Network sites only
                         $args->link_before = $this->generate_icon_tag( 'map-marker' );
                         break;
+                    case 'Artefacts & Coins': //Network sites only
+                        $args->link_before = $this->generate_icon_tag( 'map-marker' );
+                        break;
                     case 'Get Involved': //Network sites only
                         $args->link_before = $this->generate_icon_tag( 'thumbs-up' );
                         break;
+                    case 'Museums & Groups': //Network sites only
+                        $args->link_before = $this->generate_icon_tag( 'building' );
+                        break;
                     case 'Team': //Network sites only
-                        $args->link_before = $this->generate_icon_tag( 'star' );
+                        $args->link_before = $this->generate_icon_tag( 'group' );
                         break;
                     case 'Contact':
                         $args->link_before = $this->generate_icon_tag( 'user' );
