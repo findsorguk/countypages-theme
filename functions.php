@@ -48,6 +48,11 @@ function countypages_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+	// Defines the thumbnail size to accompany blog excerpts
+    if ( function_exists( 'add_image_size' ) ) {
+        add_image_size( 'excerpt-thumbnail', 150, 150, true );
+    }
+
     add_filter( 'post_thumbnail_html', 'my_post_image_html', 10, 3 );
 
     function my_post_image_html( $html, $post_id, $post_image_id ) {

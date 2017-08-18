@@ -12,6 +12,7 @@
 
     <div class="entry-summary">
 
+        <?php if ( has_post_thumbnail() ) the_post_thumbnail( 'excerpt-thumbnail', array( 'class' => 'img-polaroid' ) ); ?>
         <?php the_excerpt( ); ?>
 
         <?php
