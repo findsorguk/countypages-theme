@@ -34,7 +34,7 @@
     <!-- WordPress HTML -->
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-            <a href="https://finds.org.uk" title="Go to the homepage"><img src="https://finds.org.uk/assets/logos/pas.jpg"
+            <a href="<?= get_base_url(); ?>" title="Go to the homepage"><img src="<?= get_base_url(); ?>/assets/logos/pas.jpg"
                                                                        alt="The Scheme's logo"
                                                                        width="213" height="104"/></a>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -64,8 +64,8 @@
             echo
 
             '<div class="site-sponsorship">
-                <a href="http://www.hlf.org.uk" title="The Heritage Lottery Fund website"><img class="sponsors-hlf"
-                                       src="https://finds.org.uk/assets/logos/HLF_english_compact_pantone_150px.jpg"
+                <a href="https://www.heritagefund.org.uk" title="The Heritage Lottery Fund website"><img class="sponsors-hlf"
+                                       src="' . get_base_url() . '/assets/logos/HLF_english_compact_pantone_150px.jpg"
                                                                            alt="The Heritage Lottery Fund logo"/></a>
             </div><!-- .site-sponsorship -->';
         }

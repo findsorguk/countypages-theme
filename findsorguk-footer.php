@@ -19,26 +19,26 @@
             <div class="row-fluid ">
                 <div class="span3">
                     <a href="http://www.britishmuseum.org" title="The British Museum website">
-                        <img class="sponsors" src="https://finds.org.uk/assets/logos/bm_logo.png" width="150" height="60"
+                        <img class="sponsors" src="<?= get_base_url(); ?>/assets/logos/bm_logo.png" width="150" height="60"
                              alt="The British Museum logo"/></a>
-                    <a href="http://www.hlf.org.uk" title="The Heritage Lottery Fund website">
-                        <img class="sponsors sponsors-hlf" src="https://finds.org.uk/assets/logos/HLF_english_compact_pantone_150px.jpg"
+                    <a href="https://www.heritagefund.org.uk" title="The Heritage Lottery Fund website">
+                        <img class="sponsors sponsors-hlf" src="<?= get_base_url(); ?>/assets/logos/HLF_english_compact_pantone_150px.jpg"
                              alt="The Heritage Lottery Fund logo"/></a>
                 </div>
                 <div class="span3">
                     <h4 class="lead">About Us</h4>
                     <ul>
                         <li>
-                            <a href="https://finds.org.uk/about"
+                            <a href="<?= get_base_url(); ?>/about"
                                title="More information about the Portable Antiquities Scheme">About the Scheme</a></li>
                         <li>
-                            <a href="https://finds.org.uk/about/vacancies"
+                            <a href="<?= get_base_url(); ?>/about/vacancies"
                                title="See all current job vacancies">Vacancies</a></li>
                         <li>
-                            <a href="https://finds.org.uk/about/logoandbranding"
+                            <a href="<?= get_base_url(); ?>/about/logoandbranding"
                                title="Scheme logo and branding guidelines">Logo and branding</a></li>
                         <li>
-                            <a href="https://finds.org.uk/about/contactus"
+                            <a href="<?= get_base_url(); ?>/about/contactus"
                                title="Contact the Scheme regarding our work" accesskey="9">Contact Us</a></li>
 
                     </ul>
@@ -47,22 +47,22 @@
                     <h4 class="lead">About our Site</h4>
                     <ul>
                         <li>
-                            <a href="https://finds.org.uk/info"
+                            <a href="<?= get_base_url(); ?>/info"
                                title="Information about this website">About our site</a></li>
                         <li>
-                            <a href="https://finds.org.uk/info/accessibility"
+                            <a href="<?= get_base_url(); ?>/info/accessibility"
                                title="Information about our site's accessibility" accesskey="0">Accessibility</a></li>
                         <li>
-                            <a href="https://finds.org.uk/info/termsandconditions"
+                            <a href="<?= get_base_url(); ?>/info/termsandconditions"
                                title="Read about our terms and conditions - nothing onerous" accesskey="8">Terms of Use</a></li>
                         <li>
-                            <a href="https://finds.org.uk/info/privacy"
+                            <a href="<?= get_base_url(); ?>/info/privacy"
                                title="Read about our privacy policy">Privacy &amp; Cookies</a></li>
                         <li>
-                            <a href="https://finds.org.uk/info/foi"
+                            <a href="<?= get_base_url(); ?>/info/foi"
                                title="Freedom of information requests and how to submit one">Freedom of Information</a></li>
                         <li>
-                            <a href="https://finds.org.uk/help/database"
+                            <a href="<?= get_base_url(); ?>/help/database"
                                title="Find helpful information about using our site" accesskey="6">Help</a></li>
                     </ul>
                 </div>
@@ -70,14 +70,14 @@
                 <div class="span3 ">
                     <h4 class="lead">Join the conversation</h4>
                     <ul>
-                        <li><a href="http://www.twitter.com/#!/findsorguk" title="Our social media presence on Twitter">Twitter</a>
+                        <li><a href="https://www.twitter.com/#!/findsorguk" title="Our social media presence on Twitter">Twitter</a>
                         </li>
-                        <li><a href="http://facebook.com/portableantiquitiesscheme" title="Our social media presence on Facebook">Facebook</a>
+                        <li><a href="https://facebook.com/portableantiquitiesscheme" title="Our social media presence on Facebook">Facebook</a>
                         </li>
-                        <li><a href="http://flickr.com/finds" title="Our social media presence on Flickr">Flickr</a></li>
-                        <li><a href="http://www.youtube.com/user/portableantiquities" title="Our social media presence on Youtube">YouTube</a>
+                        <li><a href="https://flickr.com/finds" title="Our social media presence on Flickr">Flickr</a></li>
+                        <li><a href="https://www.youtube.com/user/portableantiquities" title="Our social media presence on Youtube">YouTube</a>
                         </li>
-                        <li><a href="http://pinterest.com/findsorguk/" title="Our social media presence on Pinterst">Pinterest</a>
+                        <li><a href="https://pinterest.com/findsorguk/" title="Our social media presence on Pinterst">Pinterest</a>
                         </li>
                     </ul>
                 </div>
@@ -87,8 +87,8 @@
             <div class="row-fluid ">
 
                 <div class="span3">
-                    <a href="http://www.culture.gov.uk" title="The Department of Culture, Media and Sport website"><img
-                            src="https://finds.org.uk/assets/logos/dcms.png" width="80" height="70" alt="DCMS logo"
+                    <a href="https://www.culture.gov.uk" title="The Department of Culture, Media and Sport website"><img
+                            src="<?= get_base_url(); ?>/assets/logos/dcms.png" width="80" height="70" alt="DCMS logo"
                             class="sponsors"/></a>
                 </div>
 
@@ -96,16 +96,16 @@
                     <h4 class="lead">Data Labs</h4>
                     <ul>
                         <li>
-                            <a href="https://finds.org.uk/datalabs">Linked
+                            <a href="<?= get_base_url(); ?>/datalabs">Linked
                                 open data policy</a></li>
                         <li>
-                            <a href="https://finds.org.uk/datalabs/terminology/objects"
+                            <a href="<?= get_base_url(); ?>/datalabs/terminology/objects"
                                title="Learn about object terms in use">Controlled vocabulary</a></li>
                         <li>
-                            <a href="https://finds.org.uk/datalabs/oai">OAI
+                            <a href="<?= get_base_url(); ?>/datalabs/oai">OAI
                                 interface</a></li>
                         <li>
-                            <a href="https://finds.org.uk/datalabs/rss">RSS
+                            <a href="<?= get_base_url(); ?>/datalabs/rss">RSS
                                 feeds</a></li>
                     </ul>
                 </div>

@@ -22,22 +22,22 @@
                     <ul class="nav">
                         <li><a href="/"
                                title="The Scheme's homepage" accesskey="1">Home <i class="icon-home icon-white"></i></a></li>
-                        <li><a href="https://finds.org.uk/contacts"
+                        <li><a href="<?= get_base_url(); ?>/contacts"
                                title="Who to contact at the Scheme">Contacts</a></li>
-                        <li><a href="https://finds.org.uk/getinvolved"
+                        <li><a href="<?= get_base_url(); ?>/getinvolved"
                                title="How to get involved with the largest public archaeology project">Get Involved</a></li>
-                        <li><a href="https://finds.org.uk/database"
+                        <li><a href="<?= get_base_url(); ?>/database"
                                title="Search our database for artefacts and coins">Database</a></li>
-                        <li><a href="https://finds.org.uk/treasure"
+                        <li><a href="<?= get_base_url(); ?>/treasure"
                                title="Learn about the Treasure Act">Treasure</a></li>
 
-                        <li><a href="https://finds.org.uk/guides"
+                        <li><a href="<?= get_base_url(); ?>/guides"
                                title="View guides to artefacts, coins and periods">Guides</a></li>
-                        <li><a href="https://finds.org.uk/news"
+                        <li><a href="<?= get_base_url(); ?>/news"
                                title="Keep up to date with the latest news and events">News &amp; Events</a></li>
-                        <li><a href="https://finds.org.uk/publications"
+                        <li><a href="<?= get_base_url(); ?>/publications"
                                title="Publications and reports">Publications</a></li>
-                        <li><a href="https://finds.org.uk/research"
+                        <li><a href="<?= get_base_url(); ?>/research"
                                title="Academic research using our data">Research</a></li>
                         <li><a class="active" href="/counties"
                                title="Finds in your local community">Counties</a></li>
