@@ -57,7 +57,10 @@
                                title="Read about our terms and conditions - nothing onerous" accesskey="8">Terms of Use</a></li>
                         <li>
                             <a href="https://finds.org.uk/info/privacy"
-                               title="Read about our privacy policy">Privacy &amp; Cookies</a></li>
+                               title="Read about our privacy policy">Privacy</a></li>
+                        <li>
+                            <a href="https://www.britishmuseum.org/cookies" target="_blank"
+                               title="Information about our site's cookies">Cookie information </a></li>
                         <li>
                             <a href="https://finds.org.uk/info/foi"
                                title="Freedom of information requests and how to submit one">Freedom of Information</a></li>
