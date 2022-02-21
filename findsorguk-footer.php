@@ -58,6 +58,10 @@
                         <li>
                             <a href="<?= get_base_url(); ?>/info/privacy"
                                title="Read about our privacy policy">Privacy &amp; Cookies</a></li>
+                        </li>
+                        <li>
+                            <a href="https://www.britishmuseum.org/cookies" target="_blank"
+                               title="Information about our site's cookies">Cookie information</a></li>
                         <li>
                             <a href="<?= get_base_url(); ?>/info/foi"
                                title="Freedom of information requests and how to submit one">Freedom of Information</a></li>
