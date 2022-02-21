@@ -5,6 +5,13 @@
  * @package countypages
  */
 
+if ( ! function_exists( 'get_base_url' ) ) {
+	function get_base_url() : string {
+		$url = parse_url(network_site_url()); // Returns URL of counties page e.g.training.finds.org.uk/counties
+		return $url['scheme'] . '://' . $url['host'];
+	}
+}
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
@@ -124,13 +131,13 @@ function countypages_scripts() {
 	wp_enqueue_style( 'countypages-style', get_stylesheet_uri() );
 
     // Include CSS files from finds.org.uk
-    wp_enqueue_style( 'countypages-bootstrap.min', 'https://finds.org.uk/css/bootstrap.min.css', false, '', 'screen' );
-    wp_enqueue_style( 'countypages-custom-bootstrap', 'https://finds.org.uk/css/custom-bootstrap.css', false, '',  'screen' );
-    wp_enqueue_style( 'countypages-lightbox', 'https://finds.org.uk/css/lightbox.css', 'screen', false, '', 'screen' );
-    wp_enqueue_style( 'countypages-jquery.reject', 'https://finds.org.uk/css/jquery.reject.css', false, '',  'screen' );
-    wp_enqueue_style( 'countypages-bootstrap-responsive.min', 'https://finds.org.uk/css/bootstrap-responsive.min.css', false, '',  'screen' );
+    wp_enqueue_style( 'countypages-bootstrap.min',  get_base_url() . '/css/bootstrap.min.css', false, '', 'screen' );
+    wp_enqueue_style( 'countypages-custom-bootstrap',  get_base_url() . '/css/custom-bootstrap.css', false, '',  'screen' );
+    wp_enqueue_style( 'countypages-lightbox',  get_base_url() . '/css/lightbox.css', 'screen', false, '', 'screen' );
+    wp_enqueue_style( 'countypages-jquery.reject',  get_base_url() . '/css/jquery.reject.css', false, '',  'screen' );
+    wp_enqueue_style( 'countypages-bootstrap-responsive.min',  get_base_url() . '/css/bootstrap-responsive.min.css', false, '',  'screen' );
     wp_enqueue_style( 'countypages-open-sans', '//fonts.googleapis.com/css?family=Open+Sans', false, '', 'screen');
-    wp_enqueue_style( 'countypages-print', 'https://finds.org.uk/css/print.css', false, '',  'print' );
+    wp_enqueue_style( 'countypages-print',  get_base_url() . '/css/print.css', false, '',  'print' );
 
 	wp_enqueue_script( 'countypages-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
@@ -139,11 +146,11 @@ function countypages_scripts() {
     // Include JS files from finds.org.uk
     wp_enqueue_script( 'countypages-jquery.min', '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', array(), '', true );
     wp_enqueue_script( 'countypages-jquery-ui.min', '//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js', array(), '', true );
-    wp_enqueue_script( 'countypages-global-functions', 'https://finds.org.uk/js/globalFunctions.js', array(), '', true );
-    wp_enqueue_script( 'countypages-jquery-lightbox', 'https://finds.org.uk/js/JQuery/jquery.lightbox.js', array(), '', true );
-    wp_enqueue_script( 'countypages-bootstrap.min', 'https://finds.org.uk/js/bootstrap.min.js', array(), '', true );
-    wp_enqueue_script( 'countypages-cookiesdirective', 'https://finds.org.uk/js/JQuery/jquery.cookiesdirective.js', array(), '', true );
-    wp_enqueue_script( 'countypages-jquery-reject', 'https://finds.org.uk/js/jquery.reject.js', array(), '', true );
+    wp_enqueue_script( 'countypages-global-functions',  get_base_url() . '/js/globalFunctions.js', array(), '', true );
+    wp_enqueue_script( 'countypages-jquery-lightbox',  get_base_url() . '/js/JQuery/jquery.lightbox.js', array(), '', true );
+    wp_enqueue_script( 'countypages-bootstrap.min',  get_base_url() . '/js/bootstrap.min.js', array(), '', true );
+    wp_enqueue_script( 'countypages-cookiesdirective',  get_base_url() . '/js/JQuery/jquery.cookiesdirective.js', array(), '', true );
+    wp_enqueue_script( 'countypages-jquery-reject',  get_base_url() . '/js/jquery.reject.js', array(), '', true );
     wp_enqueue_script( 'countypages-font-awesome', 'https://use.fontawesome.com/0932d3bb80.js', array(), '', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
