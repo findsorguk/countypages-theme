@@ -9,6 +9,46 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<!-- Google Consent mode -->
+<script data-cookieconsent="ignore">
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag("consent", "default", {
+		ad_storage: "denied",
+		analytics_storage: "denied",
+		functionality_storage: "denied",
+		personalization_storage: "denied",
+		security_storage: "granted",
+		wait_for_update: 2000,
+	});
+	gtag("set", "ads_data_redaction", true);
+</script>
+<!-- End Google Consent mode -->
+
+<script data-cookieconsent="ignore">
+	(function (w, d, s, l, i) {
+	w[l] = w[l] || [];
+	w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+	var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+	j.async = true;
+	j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+	f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-WZBKMJP');
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Cookiebot -->
+<script
+	id="Cookiebot"
+	src="https://consent.cookiebot.com/uc.js"
+	data-cbid="ec5f4b04-e699-4bea-a9de-eda95d4d9fb7"
+	data-blockingmode="auto"
+	type="text/javascript"
+></script>
+<!-- End Cookiebot -->
+
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -34,7 +74,7 @@
     <!-- WordPress HTML -->
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-            <a href="https://finds.org.uk" title="Go to the homepage"><img src="https://finds.org.uk/assets/logos/pas.jpg"
+            <a href="<?= get_base_url(); ?>" title="Go to the homepage"><img src="<?= get_base_url(); ?>/assets/logos/pas.jpg"
                                                                        alt="The Scheme's logo"
                                                                        width="213" height="104"/></a>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -64,8 +104,8 @@
             echo
 
             '<div class="site-sponsorship">
-                <a href="http://www.hlf.org.uk" title="The Heritage Lottery Fund website"><img class="sponsors-hlf"
-                                       src="https://finds.org.uk/assets/logos/HLF_english_compact_pantone_150px.jpg"
+                <a href="https://www.heritagefund.org.uk" title="The Heritage Lottery Fund website"><img class="sponsors-hlf"
+                                       src="' . get_base_url() . '/assets/logos/HLF_english_compact_pantone_150px.jpg"
                                                                            alt="The Heritage Lottery Fund logo"/></a>
             </div><!-- .site-sponsorship -->';
         }
