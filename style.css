@@ -1071,21 +1071,3 @@ object {
 .nlposts-block-thumbnail-litem-override {
     list-style: none;
 }
-
-/*--------------------------------------------------------------
-14.0 Cookiebot
---------------------------------------------------------------*/
-/*Make element 16-9 ratio*/
-.video-container {
-	position: relative;
-	padding-bottom: 56.25%;
-}
-/*Force iframe to take up as much space as the parent*/
-.video-container iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
